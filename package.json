@@ -1,0 +1,23 @@
+{
+  "name": "node-js-calculator",
+  "version": "1.0.0",
+  "description": "Simple calculator project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takacsberni/node-js-calculator.git"
+  },
+  "author": "takacsberni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takacsberni/node-js-calculator/issues"
+  },
+  "homepage": "https://github.com/takacsberni/node-js-calculator#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
+  }
+}

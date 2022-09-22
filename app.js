@@ -8,11 +8,32 @@ app.get('', (req, res)=> {
     res.sendFile(__dirname + '/index.html');
 })
 
-app.post('/', (req, res)=>{
+app.post('/add', (req, res)=>{
     const nr1 = Number(req.body.num1);
     const nr2 = Number(req.body.num2);
     const sum = nr1 + nr2;
-    res.send('The sum of nr 1 and nr 2 is: ' + sum);
+    res.send(nr1 + " + " + nr2 + " = " + sum);
+})
+
+app.post('/subtract', (req, res)=>{
+    const nr1 = Number(req.body.num1);
+    const nr2 = Number(req.body.num2);
+    const sum = nr1 - nr2;
+    res.send(nr1 + " - " + nr2 + " = " + sum);
+})
+
+app.post('/multiply', (req, res)=>{
+    const nr1 = Number(req.body.num1);
+    const nr2 = Number(req.body.num2);
+    const sum = nr1 * nr2;
+    res.send(nr1 + " * " + nr2 + " = " + sum);
+})
+
+app.post('/divide', (req, res)=>{
+    const nr1 = Number(req.body.num1);
+    const nr2 = Number(req.body.num2);
+    const sum = nr1 / nr2;
+    res.send(nr1 + " / " + nr2 + " = " + sum);
 })
 
 app.listen(3000, (res)=> {
